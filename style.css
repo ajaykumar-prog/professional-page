@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main_box{
+    background-image: url(nature.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 13px;
+    line-height: 60px;
+    z-index: 2;
+    top: -15px;  
+    
+}
+.btn_one i{
+    cursor: pointer;
+    transform: scale3d();
+}
+.btn_one i:hover{
+    transform: scale3d(1.2);
+}
+
+.sidebar_menu a:hover{
+    color: rgb(0, 0, 0);
+}
+.sidebar_menu{
+    position: fixed;
+    left: -200px;
+    height: 100vh   ;
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0.2) ;
+    border-radius: 6px;
+    line-height: 30px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transform: translateX();
+}
+.logo {
+    position: absolute;  
+    width: 100%;
+    line-height: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    cursor: pointer;
+}
+.menu li{
+    width: 150px;
+    list-style: none;
+}
+.menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+}
+.btn_two i{
+    position: absolute;
+    left: 160px;
+    top: 10px;
+    color: black;
+    font-size: x-small;
+    cursor: pointer;
+}
+.menu{
+    position: relative;
+    top: 50px;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    color: white;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    margin: 10px;
+}
+.social_media{
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    opacity: 0.5;
+}
+.social_media i{
+    color: white;   
+}
+.social_media i:hover{
+    opacity: 1.8;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);  
+}
+#check{
+    display: none;
+}
+ 
+#check:checked  ~ .sidebar_menu{
+    left: 0px;   
+}
