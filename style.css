@@ -1,5 +1,5 @@
-*{
-    margin: 0;
+*{ 
+     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
@@ -8,7 +8,7 @@
     height: 100vh;
     background-size: cover;
 }
-.btn_one{
+.btn_one i{
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 700;
@@ -17,18 +17,15 @@
     line-height: 60px;
     z-index: 2;
     top: -15px;  
-    
-}
-.btn_one i{
     cursor: pointer;
-    transform: scale3d();
 }
 .btn_one i:hover{
-    transform: scale3d(1.2);
+    transform: scale(1.2);
 }
-
 .sidebar_menu a:hover{
     color: rgb(0, 0, 0);
+    cursor: default;
+    font-weight: bolder;
 }
 .sidebar_menu{
     position: fixed;
@@ -41,13 +38,6 @@
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
     transform: translateX();
 }
-.logo {
-    position: absolute;  
-    width: 100%;
-    line-height: 30px;
-    border-radius: 6px;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-}
 .sidebar_menu .logo a{
     position: absolute;
     left: 40px;
@@ -55,6 +45,7 @@
     color: rgb(255, 255, 255);
     font-weight: 900;
     cursor: pointer;
+    font-size: larger;
 }
 .menu li{
     width: 150px;
@@ -67,9 +58,9 @@
 .btn_two i{
     position: absolute;
     left: 160px;
-    top: 10px;
-    color: black;
-    font-size: x-small;
+    top: 8px;
+    color: rgb(0, 0, 0);
+    font-size: small;
     cursor: pointer;
 }
 .menu{
@@ -91,20 +82,24 @@
     position: relative;
     bottom: 20px;
     text-align: center;
-    opacity: 0.5;
+    opacity: 1;
 }
 .social_media i{
-    color: white;   
+    color: white; 
+    opacity: 0.5;  
 }
 .social_media i:hover{
-    opacity: 1.8;
+    opacity: 1;
     font-size: 2rem;
-    color: rgb(0, 0, 0);  
+    color: rgb(255, 255, 255);  
 }
 #check{
     display: none;
 }
- 
 #check:checked  ~ .sidebar_menu{
     left: 0px;   
 }
+.menu i{
+    color: black;
+}
+
